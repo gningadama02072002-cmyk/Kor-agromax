@@ -1,187 +1,127 @@
- <!DOCTYPE html>
+ <<!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KOR AGROMAX</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        /*grille-produits {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 30px;
-  padding: 40px 20px;
-  .prix {
-  font-size: 18px;
-  font-weight: bold;
-  color: #2e7d32; /* vert KOR AGROMAX */
-  margin: 10px 0;
-
-.carte-produit {
-  border: 1px solid #e0e0e0;
-  border-radius: 10px;
-  padding: 20px;
-  text-align: center;
-  background: #fff;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-}
-
-.carte-produit img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 8px;
+        .grille-produits {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+          gap: 30px;
+          padding: 40px 20px;
+        }
+        .prix {
+          font-size: 18px;
+          font-weight: bold;
+          color: #2e7d32;
+          margin: 10px 0;
+        }
+        .carte-produit {
+          border: 1px solid #e0e0e0;
+          border-radius: 10px;
+          padding: 20px;
+          text-align: center;
+          background: #fff;
+          box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        .carte-produit img {
+          width: 100%;
+          height: 200px;
+          object-fit: cover;
+          border-radius: 8px;
+        }
+        .btn-whatsapp {
+          display: inline-block;
+          background: #25D366;
+          color: white;
+          padding: 10px 15px;
+          border-radius: 5px;
+          text-decoration: none;
+          margin-top: 10px;
+        }
     </style>
 </head>
-
 <body>
-
 <header>
-
     <nav class="navbar">
-
         <div class="logo">
             <img src="logo.jpeg" width="200">
         </div>
-
         <ul class="menu">
             <li><a href="#">Accueil</a></li>
             <li><a href="#apropos">À propos</a></li>
             <li><a href="#services">Services</a></li>
-            <li><a href="#">Produits</a></li>
+            <li><a href="#produits">Produits</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
-
     </nav>
-
 </header>
 
 <main align="center">
-
     <h1>Bienvenue chez KOR AGROMAX</h1>
-
     <p><strong>Vos cultures, notre expertise, votre réussite.</strong></p>
 
     <section class="apropos" id="apropos">
-
         <h2>À propos de nous</h2>
-
-        <p>
-            KOR AGROMAX est une entreprise spécialisée dans le développement agricole.
-            Nous accompagnons les producteurs avec des solutions innovantes,
-            des semences de qualité, des conseils techniques et des services adaptés
-            pour améliorer les rendements agricoles tout en préservant l'environnement.
-        </p>
-
+        <p>KOR AGROMAX est une entreprise spécialisée dans le développement agricole. Nous accompagnons les producteurs avec des solutions innovantes, des semences de qualité, des conseils techniques et des services adaptés.</p>
     </section>
-
 
     <section class="services" id="services">
-
         <h2>Nos services</h2>
-
         <div class="conteneur">
-
-            <div class="carte">
-                <h3>🌱 Semences de qualité</h3>
-                <p>
-                    Nous proposons des semences sélectionnées pour améliorer vos rendements.
-                </p>
-            </div>
-
-            <div class="carte">
-                <h3>🚜 Accompagnement agricole</h3>
-                <p>
-                    Des conseils techniques pour une agriculture moderne et durable.
-                </p>
-            </div>
-
-            <div class="carte">
-                <h3>🌾 Production agricole</h3>
-                <p>
-                    Production et valorisation des produits agricoles de qualité.
-                </p>
-            </div>
-
-            <div class="carte">
-                <h3>📦 Vente de produits</h3>
-                <p>
-                    Distribution de produits agricoles et d'intrants adaptés à vos besoins.
-                </p>
-            </div>
-
+            <div class="carte"><h3>🌱 Semences de qualité</h3><p>Semences sélectionnées pour améliorer vos rendements.</p></div>
+            <div class="carte"><h3>🚜 Accompagnement agricole</h3><p>Conseils techniques pour une agriculture moderne.</p></div>
+            <div class="carte"><h3>🌾 Production agricole</h3><p>Production et valorisation des produits de qualité.</p></div>
+            <div class="carte"><h3>📦 Vente de produits</h3><p>Distribution d'intrants adaptés à vos besoins.</p></div>
         </div>
-
     </section>
 
+    <section class="produits" id="produits">
+      <h2>Nos Semences Maraîchères</h2>
+      <p class="sous-titre">KOR AGROMAX - Vos cultures, notre expertise, votre réussite 🌱</p>
+      <div class="grille-produits">
+        <div class="carte-produit">
+          <img src="menthepoivree.jpeg" alt="Menthe Poivrée Tropica">
+          <h3>Menthe Poivrée - Tropica</h3>
+          <p>Idéale pour tisanes et jus. Cycle court. Culture facile toute l’année à lompoul.</p>
+          <p class="prix">Contactez-nous</p>
+          <a href="https://wa.me/221783594831?text=Bonjour%20KOR%20AGROMAX%2C%20je%20veux%20commander%20Menthe%20Poivr%C3%A9e%20Tropica" class="btn-whatsapp" target="_blank">Commander sur WhatsApp</a>
+        </div>
+        <div class="carte-produit">
+          <img src="pimentjaunefort.jpeg" alt="Piment Jaune Fort">
+          <h3>Piment Jaune Fort</h3>
+          <p>Très productif. Résistant à la chaleur. Parfait pour le marché local.</p>
+          <p class="prix">Contactez-nous</p>
+          <a href="https://wa.me/221783594831?text=Bonjour%20KOR%20AGROMAX%2C%20je%20veux%20commander%20Piment%20Jaune%20Fort" class="btn-whatsapp" target="_blank">Commander sur WhatsApp</a>
+        </div>
+        <div class="carte-produit">
+          <img src="tomatecobra26.jpeg" alt="Tomate Cobra 26">
+          <h3>Tomate Cobra 26</h3>
+          <p>Variété hybride. Gros calibre. Bon rendement et bonne conservation.</p>
+          <p class="prix">Contactez-nous</p>
+          <a href="https://wa.me/221783594831?text=Bonjour%20KOR%20AGROMAX%2C%20je%20veux%20commander%20Tomate%20Cobra%2026" class="btn-whatsapp" target="_blank">Commander sur WhatsApp</a>
+        </div>
+        <div class="carte-produit">
+          <img src="aubergineblackbeauty.jpeg" alt="Aubergine Black Beauty">
+          <h3>Aubergine Black Beauty</h3>
+          <p>Fruits noirs brillants. Très appréciée au marché. Cycle 65-75 jours.</p>
+          <p class="prix">Contactez-nous</p>
+          <a href="https://wa.me/221783594831?text=Bonjour%20KOR%20AGROMAX%2C%20je%20veux%20commander%20Aubergine%20Black%20Beauty" class="btn-whatsapp" target="_blank">Commander sur WhatsApp</a>
+        </div>
+      </div>
+    </section>
 
     <section id="contact">
-
         <h2>Contact</h2>
-
-        <p>
-            Contactez KOR AGROMAX pour vos besoins agricoles.
-        </p>
-
+        <p>Contactez KOR AGROMAX pour vos besoins agricoles.</p>
     </section>
-
 </main>
 
-
 <footer align="center">
-
     <hr>
-
-    <p>
-        &copy; 2026 KOR AGROMAX - Tous droits réservés.
-    </p>
-
+    <p>&copy; 2026 KOR AGROMAX - Tous droits réservés.</p>
 </footer>
-
 </body>
-
 </html>
-
-
-<section class="produits">
-  <h2>Nos Semences Maraîchères</h2>
-  <p class="sous-titre">KOR AGROMAX - Vos cultures, notre expertise, votre réussite 🌱</p>
-  
-  <div class="grille-produits">
-
-    <!-- 1. Menthe Poivrée -->
-    <div class="carte-produit">
-      <img src="img/menthepoivree.jpeg" alt=" Menthe Poivrée Tropica">
-      <h3>Menthe Poivrée - Tropica</h3>
-      <p>Idéale pour tisanes et jus. Cycle court. Culture facile toute l’année à lompoul.</p>
-      <p class="prix">Contactez-nous</p>
-      <a href="https://wa.me/221783594831?text=Bonjour%20KOR%20AGROMAX%2C%20je%20veux%20commander%20Menthe%20Poivr%C3%A9e%20Tropica" class="btn-whatsapp" target="_blank">Commander sur WhatsApp</a>
-    </div>
-
-    <!-- 2. Piment Jaune Fort -->
-    <div class="carte-produit">
-      <img src="img/pimentjaunefort.jpeg"alt="Piment Jaune Fort">
-      <h3>Piment Jaune Fort</h3>
-      <p>Très productif. Résistant à la chaleur. Parfait pour le marché local.</p>
-      <p class="prix">Contactez-nous</p>
-      <a href="https://wa.me/221783594831?text=Bonjour%20KOR%20AGROMAX%2C%20je%20veux%20commander%20Piment%20Jaune%20Fort" class="btn-whatsapp" target="_blank">Commander sur WhatsApp</a>
-    </div>
-
-    <!-- 3. Tomate Cobra 26 -->
-    <div class="carte-produit">
-      <img src="img/tomatecobra26.jpeg" alt="Tomate Cobra 26">
-      <h3>Tomate Cobra 26</h3>
-      <p>Variété hybride. Gros calibre. Bon rendement et bonne conservation.</p>
-      <p class="prix">Contactez-nous</p>
-      <a href="https://wa.me/221783594831?text=Bonjour%20KOR%20AGROMAX%2C%20je%20veux%20commander%20Tomate%20Cobra%2026" class="btn-whatsapp" target="_blank">Commander sur WhatsApp</a>
-    </div>
-
-    <!-- 4. Aubergine Black Beauty -->
-    <div class="carte-produit">
-      <img src="img/aubergineblackbeauty.jpeg" alt="Aubergine Black Beauty">
-      <h3>Aubergine Black Beauty</h3>
-      <p>Fruits noirs brillants. Très appréciée au marché. Cycle 65-75 jours.</p>
-      <p class="prix">Contactez-nous</p>
-      <a href="https://wa.me/221783594831?text=Bonjour%20KOR%20AGROMAX%2C%20je%20veux%20commander%20Aubergine%20Black%20Beauty" class="btn-whatsapp" target="_blank">Commander sur WhatsApp</a>
-    </div>
