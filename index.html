@@ -42,6 +42,28 @@ border-radius:5px;
 text-decoration:none;
 margin-top:10px;
 }
+/* --- CORRECTION MENU TELEPHONE --- */
+.navbar{
+display:flex !important;
+flex-wrap:wrap !important;
+justify-content:space-between !important;
+align-items:center !important;
+padding:10px 15px !important;
+background:#fff !important;
+}
+.menu{
+display:flex !important;
+flex-wrap:wrap !important;
+gap:12px !important;
+list-style:none !important;
+padding:0 !important;
+margin:10px 0 !important;
+}
+.menu li a{ text-decoration:none; color:#2e7d32; font-weight:600; white-space:nowrap; }
+@media(max-width:768px){
+.navbar{flex-direction:column !important;}
+.menu{justify-content:center !important;}
+}
 </style>
 </head>
 <body>
@@ -52,7 +74,26 @@ margin-top:10px;
 <main>
 <h1 align="center">Bienvenue chez KOR AGROMAX</h1>
 <p align="center"><strong>Vos cultures, notre expertise, votre réussite.</strong></p>
-<section class="apropos" id="apropos"><h2 align="center">À propos</h2><p align="center">KOR AGROMAX est une entreprise spécialisée dans le développement agricole.Nous accompagons lesproducteurs avec des solutions innovantes, des  semences de qualité,des conseils techniques et services adaptés pour améliorer les rendements. </p></section>
+
+<section class="apropos" id="apropos" style="max-width:900px; margin:auto; padding:30px 20px;">
+<h2 align="center">À propos</h2>
+<p align="center" style="line-height:1.8; font-size:17px;">
+KOR AGROMAX est une entreprise spécialisée dans le développement agricole. 
+Nous accompagnons les producteurs avec des solutions innovantes, des semences de qualité, 
+des conseils techniques et des services adaptés pour améliorer les rendements.
+</p>
+</section>
+
+<section id="services" style="padding:40px 20px; background:#f9f9f9;">
+<h2 align="center">Nos services</h2>
+<div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:20px; max-width:1000px; margin:20px auto;">
+<div style="border:1px solid #e0e0e0; border-radius:12px; padding:20px; background:#fff; text-align:center;"><h3>🌱 Semences de qualité</h3><p>Semences sélectionnées pour améliorer vos rendements.</p></div>
+<div style="border:1px solid #e0e0e0; border-radius:12px; padding:20px; background:#fff; text-align:center;"><h3>🚜 Accompagnement agricole</h3><p>Conseils techniques pour une agriculture moderne et durable.</p></div>
+<div style="border:1px solid #e0e0e0; border-radius:12px; padding:20px; background:#fff; text-align:center;"><h3>🌾 Production agricole</h3><p>Production et valorisation des produits agricoles de qualité.</p></div>
+<div style="border:1px solid #e0e0e0; border-radius:12px; padding:20px; background:#fff; text-align:center;"><h3>📦 Vente de produits</h3><p>Distribution d'intrants et produits adaptés à vos besoins.</p></div>
+</div>
+</section>
+
 <section class="produits" id="produits">
 <h2 align="center">Nos Semences Maraîchères</h2>
 <p align="center">KOR AGROMAX - Vos cultures, notre expertise, votre réussite 🌱</p>
@@ -77,7 +118,7 @@ margin-top:10px;
 <div class="carte-produit"><img src="auberginekalenda.jpeg"><h3>Aubergine Kalenda</h3><p class="prix">Commander sur WhatsApp</p><a href="https://wa.me/221783594831" class="btn-whatsapp" target="_blank">Commander sur WhatsApp</a></div>
 </div>
 </section>
-<section id="contact"><h2 align="center">Contact</h2><p align="center">Contactez KOR AGROMAX pour vos besoins.</p></section>
+<section id="contact" style="padding:40px 20px; text-align:center; background:#2e7d32; color:white;"><h2 align="center">Contact</h2><p align="center">Contactez KOR AGROMAX pour vos besoins.</p><p>WhatsApp: +221 78 359 48 31 - Lompoul, Sénégal</p></section>
 </main>
 <footer align="center"><hr><p>&copy; 2026 KOR AGROMAX</p></footer>
 </body>
