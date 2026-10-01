@@ -6,120 +6,84 @@
 <title>KOR AGROMAX</title>
 <link rel="stylesheet" href="style.css">
 <style>
-.grille-produits{
-display:grid !important;
-grid-template-columns:repeat(4, 1fr) !important;
-gap:20px !important;
-padding:20px !important;
-}
-@media(max-width:900px){
-.grille-produits{grid-template-columns:repeat(2, 1fr) !important;}
-}
-@media(max-width:500px){
-.grille-produits{grid-template-columns:1fr !important;}
-}
-.carte-produit{
-border:1px solid #e0e0e0;
-border-radius:10px;
-padding:15px;
-text-align:center;
-background:#fff;
-box-shadow:0 2px 8px rgba(0,0,0,0.05);
-}
-.carte-produit img{
-width:100%;
-height:180px;
-object-fit:cover;
-border-radius:8px;
-}
+.grille-produits{display:grid !important;grid-template-columns:repeat(4,1fr) !important;gap:20px !important;padding:20px !important;}
+@media(max-width:900px){.grille-produits{grid-template-columns:repeat(2,1fr) !important;}}
+@media(max-width:500px){.grille-produits{grid-template-columns:1fr !important;}}
+.carte-produit{border:1px solid #e0e0e0;border-radius:10px;padding:15px;text-align:center;background:#fff;box-shadow:0 2px 8px rgba(0,0,0,0.05);}
+.carte-produit img{width:100%;height:180px;object-fit:cover;border-radius:8px;}
 .prix{font-weight:bold;color:#2e7d32;margin:10px 0;}
-.btn-whatsapp{
-display:inline-block;
-background:#25D366;
-color:white;
-padding:10px 15px;
-border-radius:5px;
-text-decoration:none;
-margin-top:10px;
-}
-/* --- CORRECTION MENU TELEPHONE --- */
-.navbar{
-display:flex !important;
-flex-wrap:wrap !important;
-justify-content:space-between !important;
-align-items:center !important;
-padding:10px 15px !important;
-background:#fff !important;
-}
-.menu{
-display:flex !important;
-flex-wrap:wrap !important;
-gap:12px !important;
-list-style:none !important;
-padding:0 !important;
-margin:10px 0 !important;
-}
-.menu li a{ text-decoration:none; color:#2e7d32; font-weight:600; white-space:nowrap; }
-@media(max-width:768px){
-.navbar{flex-direction:column !important;}
-.menu{justify-content:center !important;}
-}
+.btn-whatsapp{display:inline-block;background:#25D366;color:white;padding:10px 15px;border-radius:6px;text-decoration:none;margin-top:10px;font-weight:bold;}
+.navbar{display:flex !important;flex-wrap:wrap !important;justify-content:space-between !important;align-items:center !important;padding:10px 15px !important;background:#fff !important;}
+.menu{display:flex !important;flex-wrap:wrap !important;gap:12px !important;list-style:none !important;padding:0 !important;margin:10px 0 !important;}
+.menu li a{text-decoration:none;color:#2e7d32;font-weight:600;}
+@media(max-width:768px){.navbar{flex-direction:column !important;}.menu{justify-content:center !important;}}
 </style>
 </head>
 <body>
 <header>
-<nav class="navbar"><div class="logo"><img src="logo.jpeg" width="200"></div>
-<ul class="menu"><li><a href="#">Accueil</a></li><li><a href="#apropos">À propos</a></li><li><a href="#services">Services</a></li><li><a href="#produits">Produits</a></li><li><a href="#contact">Contact</a></li></ul></nav>
+<nav class="navbar">
+<div class="logo"><img src="logo.jpeg" width="200" alt="KOR AGROMAX"></div>
+<ul class="menu">
+<li><a href="#">Accueil</a></li>
+<li><a href="#apropos">À propos</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#produits">Produits</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
 </header>
+
 <main>
 <h1 align="center">Bienvenue chez KOR AGROMAX</h1>
 <p align="center"><strong>Vos cultures, notre expertise, votre réussite.</strong></p>
 
-<section class="apropos" id="apropos" style="max-width:900px; margin:auto; padding:30px 20px;">
+<section id="apropos" style="max-width:900px;margin:auto;padding:30px 20px;">
 <h2 align="center">À propos</h2>
-<p align="center" style="line-height:1.8; font-size:17px;">
-KOR AGROMAX est une entreprise spécialisée dans le développement agricole. 
-Nous accompagnons les producteurs avec des solutions innovantes, des semences de qualité, 
-des conseils techniques et des services adaptés pour améliorer les rendements.
-</p>
+<p align="center" style="line-height:1.8;font-size:17px;">KOR AGROMAX est une entreprise spécialisée dans le développement agricole. Nous accompagnons les producteurs avec des solutions innovantes, des semences de qualité, des conseils techniques et des services adaptés pour améliorer les rendements.</p>
 </section>
 
-<section id="services" style="padding:40px 20px; background:#f9f9f9;">
+<section id="services" style="padding:40px 20px;background:#f9f9f9;">
 <h2 align="center">Nos services</h2>
-<div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:20px; max-width:1000px; margin:20px auto;">
-<div style="border:1px solid #e0e0e0; border-radius:12px; padding:20px; background:#fff; text-align:center;"><h3>🌱 Semences de qualité</h3><p>Semences sélectionnées pour améliorer vos rendements.</p></div>
-<div style="border:1px solid #e0e0e0; border-radius:12px; padding:20px; background:#fff; text-align:center;"><h3>🚜 Accompagnement agricole</h3><p>Conseils techniques pour une agriculture moderne et durable.</p></div>
-<div style="border:1px solid #e0e0e0; border-radius:12px; padding:20px; background:#fff; text-align:center;"><h3>🌾 Production agricole</h3><p>Production et valorisation des produits agricoles de qualité.</p></div>
-<div style="border:1px solid #e0e0e0; border-radius:12px; padding:20px; background:#fff; text-align:center;"><h3>📦 Vente de produits</h3><p>Distribution d'intrants et produits adaptés à vos besoins.</p></div>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;max-width:1000px;margin:20px auto;">
+<div style="border:1px solid #e0e0e0;border-radius:12px;padding:20px;background:#fff;text-align:center;"><h3>🌱 Semences de qualité</h3><p>Semences sélectionnées pour améliorer vos rendements.</p></div>
+<div style="border:1px solid #e0e0e0;border-radius:12px;padding:20px;background:#fff;text-align:center;"><h3>🚜 Accompagnement agricole</h3><p>Conseils techniques pour une agriculture moderne et durable.</p></div>
+<div style="border:1px solid #e0e0e0;border-radius:12px;padding:20px;background:#fff;text-align:center;"><h3>🌾 Production agricole</h3><p>Production et valorisation des produits agricoles de qualité.</p></div>
+<div style="border:1px solid #e0e0e0;border-radius:12px;padding:20px;background:#fff;text-align:center;"><h3>📦 Vente de produits</h3><p>Distribution d'intrants et produits adaptés à vos besoins.</p></div>
 </div>
 </section>
 
-<section class="produits" id="produits">
+<section id="produits" style="padding:40px 20px;">
 <h2 align="center">Nos Semences Maraîchères</h2>
 <p align="center">KOR AGROMAX - Vos cultures, notre expertise, votre réussite 🌱</p>
 <div class="grille-produits">
-<div class="carte-produit"><img src="menthepoivree.jpeg"><h3>Menthe Poivrée</h3><p class="prix">Commander sur WhatsApp</p><a href="https://wa.me/221783594831" class="btn-whatsapp" target="_blank">Commander sur WhatsApp</a></div>
-<div class="carte-produit"><img src="pimentjaunefort.jpeg"><h3>Piment Jaune Fort</h3><p class="prix">Commander sur WhatsApp</p><a href="https://wa.me/221783594831" class="btn-whatsapp" target="_blank">Commander sur WhatsApp</a></div>
-<div class="carte-produit"><img src="tomatecobra26.jpeg"><h3>Tomate Cobra 26</h3><p class="prix">Commander sur WhatsApp</p><a href="https://wa.me/221783594831" class="btn-whatsapp" target="_blank">Commander sur WhatsApp</a></div>
-<div class="carte-produit"><img src="aubergineblackbeauty.jpeg"><h3>Aubergine Black Beauty</h3><p class="prix">Commander sur WhatsApp</p><a href="https://wa.me/221783594831" class="btn-whatsapp" target="_blank">Commander sur WhatsApp</a></div>
-<div class="carte-produit"><img src="choupruktor.jpeg"><h3>Chou Pruktor</h3><p class="prix">Commander sur WhatsApp</p><a href="https://wa.me/221783594831" class="btn-whatsapp" target="_blank">Commander sur WhatsApp</a></div>
-<div class="carte-produit"><img src="chousafaru.jpeg"><h3>Chou Safaru</h3><p class="prix">Commander sur WhatsApp</p><a href="https://wa.me/221783594831" class="btn-whatsapp" target="_blank">Commander sur WhatsApp</a></div>
-<div class="carte-produit"><img src="chousanta.jpeg"><h3>Chou Santa</h3><p class="prix">Commander sur WhatsApp</p><a href="https://wa.me/221783594831" class="btn-whatsapp" target="_blank">Commander sur WhatsApp</a></div>
-<div class="carte-produit"><img src="bigwaalo.jpeg"><h3>Piment Big Waalo</h3><p class="prix">Commander sur WhatsApp</p><a href="https://wa.me/221783594831" class="btn-whatsapp" target="_blank">Commander sur WhatsApp</a></div>
-<div class="carte-produit"><img src="carottetechnisem.jpeg"><h3>Carotte Technisem</h3><p class="prix">Commander sur WhatsApp</p><a href="https://wa.me/221783594831" class="btn-whatsapp" target="_blank">Commander sur WhatsApp</a></div>
-<div class="carte-produit"><img src="tomateganila.jpeg"><h3>Tomate Ganila</h3><p class="prix">Commander sur WhatsApp</p><a href="https://wa.me/221783594831" class="btn-whatsapp" target="_blank">Commander sur WhatsApp</a></div>
-<div class="carte-produit"><img src="tomateequator.jpeg"><h3>Tomate Equator F1</h3><p class="prix">Commander sur WhatsApp</p><a href="https://wa.me/221783594831" class="btn-whatsapp" target="_blank">Commander sur WhatsApp</a></div>
-<div class="carte-produit"><img src="ciboulebalafon.jpeg"><h3>Ciboulette Balafon</h3><p class="prix">Commander sur WhatsApp</p><a href="https://wa.me/221783594831" class="btn-whatsapp" target="_blank">Commander sur WhatsApp</a></div>
-<div class="carte-produit"><img src="tomatetechnisem.jpeg"><h3>Tomate Technisem</h3><p class="prix">Commander sur WhatsApp</p><a href="https://wa.me/221783594831" class="btn-whatsapp" target="_blank">Commander sur WhatsApp</a></div>
-<div class="carte-produit"><img src="tomateanita.jpeg"><h3>Tomate Anita F1</h3><p class="prix">Commander sur WhatsApp</p><a href="https://wa.me/221783594831" class="btn-whatsapp" target="_blank">Commander sur WhatsApp</a></div>
-<div class="carte-produit"><img src="pimenttornado.jpeg"><h3>Piment Tornado</h3><p class="prix">Commander sur WhatsApp</p><a href="https://wa.me/221783594831" class="btn-whatsapp" target="_blank">Commander sur WhatsApp</a></div>
-<div class="carte-produit"><img src="pimentsunny.jpeg"><h3>Piment Sunny</h3><p class="prix">Commander sur WhatsApp</p><a href="https://wa.me/221783594831" class="btn-whatsapp" target="_blank">Commander sur WhatsApp</a></div>
-<div class="carte-produit"><img src="pimentestella.jpeg"><h3>Piment Estrella</h3><p class="prix">Commander sur WhatsApp</p><a href="https://wa.me/221783594831" class="btn-whatsapp" target="_blank">Commander sur WhatsApp</a></div>
-<div class="carte-produit"><img src="auberginekalenda.jpeg"><h3>Aubergine Kalenda</h3><p class="prix">Commander sur WhatsApp</p><a href="https://wa.me/221783594831" class="btn-whatsapp" target="_blank">Commander sur WhatsApp</a></div>
+<div class="carte-produit"><img src="menthepoivree.jpeg"><h3>Menthe Poivrée</h3><p class="prix">Disponible</p><a href="https://wa.me/221783594831?text=Bonjour%20KOR%20AGROMAX%2C%20je%20veux%20commander%20Menthe%20Poivr%C3%A9e" class="btn-whatsapp" target="_blank">Commander sur WhatsApp</a></div>
+<div class="carte-produit"><img src="pimentjaunefort.jpeg"><h3>Piment Jaune Fort</h3><p class="prix">Disponible</p><a href="https://wa.me/221783594831?text=Bonjour%20KOR%20AGROMAX%2C%20je%20veux%20commander%20Piment%20Jaune%20Fort" class="btn-whatsapp" target="_blank">Commander sur WhatsApp</a></div>
+<div class="carte-produit"><img src="tomatecobra26.jpeg"><h3>Tomate Cobra 26</h3><p class="prix">Disponible</p><a href="https://wa.me/221783594831?text=Bonjour%20KOR%20AGROMAX%2C%20je%20veux%20commander%20Tomate%20Cobra%2026" class="btn-whatsapp" target="_blank">Commander sur WhatsApp</a></div>
+<div class="carte-produit"><img src="aubergineblackbeauty.jpeg"><h3>Aubergine Black Beauty</h3><p class="prix">Disponible</p><a href="https://wa.me/221783594831?text=Bonjour%20KOR%20AGROMAX%2C%20je%20veux%20commander%20Aubergine%20Black%20Beauty" class="btn-whatsapp" target="_blank">Commander sur WhatsApp</a></div>
+<div class="carte-produit"><img src="choupruktor.jpeg"><h3>Chou Pruktor</h3><p class="prix">Disponible</p><a href="https://wa.me/221783594831?text=Bonjour%20KOR%20AGROMAX%2C%20je%20veux%20commander%20Chou%20Pruktor" class="btn-whatsapp" target="_blank">Commander sur WhatsApp</a></div>
+<div class="carte-produit"><img src="chousafaru.jpeg"><h3>Chou Safaru</h3><p class="prix">Disponible</p><a href="https://wa.me/221783594831?text=Bonjour%20KOR%20AGROMAX%2C%20je%20veux%20commander%20Chou%20Safaru" class="btn-whatsapp" target="_blank">Commander sur WhatsApp</a></div>
+<div class="carte-produit"><img src="chousanta.jpeg"><h3>Chou Santa</h3><p class="prix">Disponible</p><a href="https://wa.me/221783594831?text=Bonjour%20KOR%20AGROMAX%2C%20je%20veux%20commander%20Chou%20Santa" class="btn-whatsapp" target="_blank">Commander sur WhatsApp</a></div>
+<div class="carte-produit"><img src="bigwaalo.jpeg"><h3>Piment Big Waalo</h3><p class="prix">Disponible</p><a href="https://wa.me/221783594831?text=Bonjour%20KOR%20AGROMAX%2C%20je%20veux%20commander%20Piment%20Big%20Waalo" class="btn-whatsapp" target="_blank">Commander sur WhatsApp</a></div>
+<div class="carte-produit"><img src="carottetechnisem.jpeg"><h3>Carotte Technisem</h3><p class="prix">Disponible</p><a href="https://wa.me/221783594831?text=Bonjour%20KOR%20AGROMAX%2C%20je%20veux%20commander%20Carotte%20Technisem" class="btn-whatsapp" target="_blank">Commander sur WhatsApp</a></div>
+<div class="carte-produit"><img src="tomateganila.jpeg"><h3>Tomate Ganila</h3><p class="prix">Disponible</p><a href="https://wa.me/221783594831?text=Bonjour%20KOR%20AGROMAX%2C%20je%20veux%20commander%20Tomate%20Ganila" class="btn-whatsapp" target="_blank">Commander sur WhatsApp</a></div>
+<div class="carte-produit"><img src="tomateequator.jpeg"><h3>Tomate Equator F1</h3><p class="prix">Disponible</p><a href="https://wa.me/221783594831?text=Bonjour%20KOR%20AGROMAX%2C%20je%20veux%20commander%20Tomate%20Equator%20F1" class="btn-whatsapp" target="_blank">Commander sur WhatsApp</a></div>
+<div class="carte-produit"><img src="ciboulebalafon.jpeg"><h3>Ciboule Balafon</h3><p class="prix">Disponible</p><a href="https://wa.me/221783594831?text=Bonjour%20KOR%20AGROMAX%2C%20je%20veux%20commander%20Ciboule%20Balafon" class="btn-whatsapp" target="_blank">Commander sur WhatsApp</a></div>
+<div class="carte-produit"><img src="tomatetechnisem.jpeg"><h3>Tomate Technisem</h3><p class="prix">Disponible</p><a href="https://wa.me/221783594831?text=Bonjour%20KOR%20AGROMAX%2C%20je%20veux%20commander%20Tomate%20Technisem" class="btn-whatsapp" target="_blank">Commander sur WhatsApp</a></div>
+<div class="carte-produit"><img src="tomateanita.jpeg"><h3>Tomate Anita F1</h3><p class="prix">Disponible</p><a href="https://wa.me/221783594831?text=Bonjour%20KOR%20AGROMAX%2C%20je%20veux%20commander%20Tomate%20Anita%20F1" class="btn-whatsapp" target="_blank">Commander sur WhatsApp</a></div>
+<div class="carte-produit"><img src="pimenttornado.jpeg"><h3>Piment Tornado</h3><p class="prix">Disponible</p><a href="https://wa.me/221783594831?text=Bonjour%20KOR%20AGROMAX%2C%20je%20veux%20commander%20Piment%20Tornado" class="btn-whatsapp" target="_blank">Commander sur WhatsApp</a></div>
+<div class="carte-produit"><img src="pimentsunny.jpeg"><h3>Piment Sunny</h3><p class="prix">Disponible</p><a href="https://wa.me/221783594831?text=Bonjour%20KOR%20AGROMAX%2C%20je%20veux%20commander%20Piment%20Sunny" class="btn-whatsapp" target="_blank">Commander sur WhatsApp</a></div>
+<div class="carte-produit"><img src="pimentestella.jpeg"><h3>Piment Estella</h3><p class="prix">Disponible</p><a href="https://wa.me/221783594831?text=Bonjour%20KOR%20AGROMAX%2C%20je%20veux%20commander%20Piment%20Estella" class="btn-whatsapp" target="_blank">Commander sur WhatsApp</a></div>
+<div class="carte-produit"><img src="auberginekalenda.jpeg"><h3>Aubergine Kalenda</h3><p class="prix">Disponible</p><a href="https://wa.me/221783594831?text=Bonjour%20KOR%20AGROMAX%2C%20je%20veux%20commander%20Aubergine%20Kalenda" class="btn-whatsapp" target="_blank">Commander sur WhatsApp</a></div>
 </div>
 </section>
-<section id="contact" style="padding:40px 20px; text-align:center; background:#2e7d32; color:white;"><h2 align="center">Contact</h2><p align="center">Contactez KOR AGROMAX pour vos besoins.</p><p>WhatsApp: +221 78 359 48 31 - Lompoul, Sénégal</p></section>
+
+<section id="contact" style="padding:40px 20px;text-align:center;background:#2e7d32;color:white;">
+<h2>Contact</h2>
+<p>WhatsApp: +221 78 359 48 31</p>
+<p>Lompoul, Sénégal</p>
+</section>
 </main>
-<footer align="center"><hr><p>&copy; 2026 KOR AGROMAX</p></footer>
+
+<footer align="center"><hr><p>&copy; 2026 KOR AGROMAX - Lompoul</p></footer>
 </body>
 </html>
