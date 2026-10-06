@@ -13,10 +13,12 @@
 .carte-produit img{width:100%;height:180px;object-fit:contain;border-radius:8px;background:#fff;}
 .prix{font-weight:bold;color:#2e7d32;margin:10px 0;}
 .btn-whatsapp{display:inline-block;background:#25D366;color:white;padding:10px 15px;border-radius:6px;text-decoration:none;margin-top:10px;font-weight:bold;}
-.navbar{display:flex !important;flex-wrap:wrap !important;justify-content:space-between !important;align-items:center !important;padding:10px 15px !important;background:#fff !important;}
+.navbar{display:flex !important;flex-wrap:wrap !important;justify-content:space-between !important;align-items:center !important;padding:10px 15px !important;background:#fff !important;position:sticky;top:0;z-index:1000;box-shadow:0 2px 5px rgba(0,0,0,0.1);}
 .menu{display:flex !important;flex-wrap:wrap !important;gap:12px !important;list-style:none !important;padding:0 !important;margin:10px 0 !important;}
 .menu li a{text-decoration:none;color:#2e7d32;font-weight:600;}
 @media(max-width:768px){.navbar{flex-direction:column !important;}.menu{justify-content:center !important;}}
+.sous-titre{margin-top:40px;color:#2e7d32;border-left:6px solid #2e7d32;padding-left:12px;font-size:22px;}
+.sous-titre-phyto{margin-top:60px;color:#e65100;border-left:6px solid #ff9800;padding-left:12px;font-size:22px;}
 </style>
 </head>
 <body>
@@ -24,19 +26,20 @@
 <nav class="navbar">
 <div class="logo"><img src="logo.jpeg" width="200" alt="KOR AGROMAX"></div>
 <ul class="menu">
-<li><a href="#">Accueil</a></li>
+<li><a href="#accueil">Accueil</a></li>
 <li><a href="#apropos">À propos</a></li>
 <li><a href="#services">Services</a></li>
 <li><a href="#produits">Produits</a></li>
-<li><a href="#phytos">Phytos</a></li>
 <li><a href="#contact">Contact</a></li>
 </ul>
 </nav>
 </header>
 
 <main>
+<section id="accueil">
 <h1 align="center">Bienvenue chez KOR AGROMAX</h1>
 <p align="center"><strong>Vos cultures, notre expertise, votre réussite.</strong></p>
+</section>
 
 <section id="apropos" style="max-width:900px;margin:auto;padding:30px 20px;">
 <h2 align="center">À propos</h2>
@@ -53,9 +56,13 @@
 </div>
 </section>
 
+<!-- SECTION PRODUITS UNIQUE : SEMENCES + PHYTOS ENSEMBLE -->
 <section id="produits" style="padding:40px 20px;">
-<h2 align="center">Nos Semences Maraîchères</h2>
-<p align="center">KOR AGROMAX - Vos cultures, notre expertise, votre réussite 🌱</p>
+<h2 align="center">Nos Produits</h2>
+<p align="center">Semences et Produits Phytosanitaires de qualité</p>
+
+<!-- 1. SEMENCES -->
+<h3 class="sous-titre">🌱 Nos Semences Maraîchères</h3>
 <div class="grille-produits">
 <div class="carte-produit"><img src="menthepoivree.jpeg"><h3>Menthe Poivrée</h3><p class="prix">Disponible</p><a href="https://wa.me/221783594831?text=Bonjour%20KOR%20AGROMAX%2C%20je%20veux%20commander%20Menthe%20Poivr%C3%A9e" class="btn-whatsapp" target="_blank">Commander sur WhatsApp</a></div>
 <div class="carte-produit"><img src="pimentjaunefort.jpeg"><h3>Piment Jaune Fort</h3><p class="prix">Disponible</p><a href="https://wa.me/221783594831?text=Bonjour%20KOR%20AGROMAX%2C%20je%20veux%20commander%20Piment%20Jaune%20Fort" class="btn-whatsapp" target="_blank">Commander sur WhatsApp</a></div>
@@ -76,22 +83,20 @@
 <div class="carte-produit"><img src="pimentestella.jpeg"><h3>Piment Estella</h3><p class="prix">Disponible</p><a href="https://wa.me/221783594831?text=Bonjour%20KOR%20AGROMAX%2C%20je%20veux%20commander%20Piment%20Estella" class="btn-whatsapp" target="_blank">Commander sur WhatsApp</a></div>
 <div class="carte-produit"><img src="auberginekalenda.jpeg"><h3>Aubergine Kalenda</h3><p class="prix">Disponible</p><a href="https://wa.me/221783594831?text=Bonjour%20KOR%20AGROMAX%2C%20je%20veux%20commander%20Aubergine%20Kalenda" class="btn-whatsapp" target="_blank">Commander sur WhatsApp</a></div>
 </div>
-</section>
 
-<section id="phytos" style="padding:40px 20px;background:#fff8e1;">
-<h2 align="center">Nos Produits Phytosanitaires - 25 Produits</h2>
-<p align="center">Insecticides, Fongicides, Herbicides, Engrais</p>
+<!-- 2. PHYTOS -->
+<h3 class="sous-titre-phyto">🧪 Nos Produits Phytosanitaires - 25 Produits</h3>
 <div class="grille-produits">
 <div class="carte-produit"><img src="rocket440ec.jpeg"><h3>ROCKET 440 EC</h3><p class="prix">Insecticide</p><a href="https://wa.me/221783594831?text=Bonjour%20KOR%20AGROMAX%2C%20je%20veux%20commander%20ROCKET%20440" class="btn-whatsapp" target="_blank">Commander sur whatsapp</a></div>
 <div class="carte-produit"><img src="yakaar424ec.jpeg"><h3>YAKAAR 424 EC</h3><p class="prix">Insecticide</p><a href="https://wa.me/221783594831?text=Bonjour%20KOR%20AGROMAX%2C%20je%20veux%20commander%20YAKAAR" class="btn-whatsapp" target="_blank">Commander sur whatsapp</a></div>
-<div class="carte-produit"><img src="jazzfire500wg.jpeg"><h3>JAZZ FIRE 500 WG</h3><p class="prix">Insecticide</p><a href="https://wa.me/221783594831?text=Bonjour%20KOR%20AGROMAX%2C%20je%20veux%20commander%20JAZZ%20FIRE" class="btn-whatsapp" target="_blank">Commander sur whatsapp</a></div>
+<div class="carte-produit"><img src="jazzfire500wg.jpeg"><h3>JAZZ FIRE 500 WG</h3><p class="prix">100G - Piqueurs-suceurs</p><a href="https://wa.me/221783594831?text=Bonjour%20KOR%20AGROMAX%2C%20je%20veux%20commander%20JAZZ%20FIRE" class="btn-whatsapp" target="_blank">Commander sur whatsapp</a></div>
 <div class="carte-produit"><img src="benji5g.jpeg"><h3>BENJI 5g</h3><p class="prix">Insecticide</p><a href="https://wa.me/221783594831?text=Bonjour%20KOR%20AGROMAX%2C%20je%20veux%20commander%20BENJI" class="btn-whatsapp" target="_blank">Commander sur whatsapp</a></div>
 <div class="carte-produit"><img src="nemachoc150ec.jpeg"><h3>NEMACHOC 150 EC</h3><p class="prix">Insecticide</p><a href="https://wa.me/221783594831?text=Bonjour%20KOR%20AGROMAX%2C%20je%20veux%20commander%20NEMACHOC" class="btn-whatsapp" target="_blank">Commander sur whatsapp</a></div>
 <div class="carte-produit"><img src="panther44ec.jpeg"><h3>PANTHER 44 EC</h3><p class="prix">Insecticide</p><a href="https://wa.me/221783594831?text=Bonjour%20KOR%20AGROMAX%2C%20je%20veux%20commander%20PANTHER" class="btn-whatsapp" target="_blank">Commander sur whatsapp</a></div>
 <div class="carte-produit"><img src="nemafort400sc.jpeg"><h3>NEMAFORT 400 SC</h3><p class="prix">Insecticide</p><a href="https://wa.me/221783594831?text=Bonjour%20KOR%20AGROMAX%2C%20je%20veux%20commander%20NEMAFORT" class="btn-whatsapp" target="_blank">Commander sur whatsapp</a></div>
 <div class="carte-produit"><img src="attackplus.jpeg"><h3>ATTACK PLUS</h3><p class="prix">Insecticide</p><a href="https://wa.me/221783594831?text=Bonjour%20KOR%20AGROMAX%2C%20je%20veux%20commander%20ATTACK" class="btn-whatsapp" target="_blank">Commander sur whatsapp</a></div>
 <div class="carte-produit"><img src="koptimal1l.jpeg"><h3>K-OPTIMAL 1L</h3><p class="prix">Insecticide</p><a href="https://wa.me/221783594831?text=Bonjour%20KOR%20AGROMAX%2C%20je%20veux%20commander%20KOPTIMAL" class="btn-whatsapp" target="_blank">Commander sur whatsapp</a></div>
-<div class="carte-produit"><img src="emacot050wg.jpeg"><h3>EMACOT 050 WG</h3><p class="prix"> anti-Chenilles</p><a href="https://wa.me/221783594831?text=Bonjour%20KOR%20AGROMAX%2C%20je%20veux%20commander%20EMACOT" class="btn-whatsapp" target="_blank">Commander sur whatsapp</a></div>
+<div class="carte-produit"><img src="emacot050wg.jpeg"><h3>EMACOT 050 WG</h3><p class="prix">anti-Chenilles</p><a href="https://wa.me/221783594831?text=Bonjour%20KOR%20AGROMAX%2C%20je%20veux%20commander%20EMACOT" class="btn-whatsapp" target="_blank">Commander sur whatsapp</a></div>
 <div class="carte-produit"><img src="movento.jpeg"><h3>MOVENTO</h3><p class="prix">Insecticide</p><a href="https://wa.me/221783594831?text=Bonjour%20KOR%20AGROMAX%2C%20je%20veux%20commander%20MOVENTO" class="btn-whatsapp" target="_blank">Commander sur whatsapp</a></div>
 <div class="carte-produit"><img src="caimanb19.jpeg"><h3>CAIMAN B19</h3><p class="prix">Insecticide</p><a href="https://wa.me/221783594831?text=Bonjour%20KOR%20AGROMAX%2C%20je%20veux%20commander%20CAIMAN" class="btn-whatsapp" target="_blank">Commander sur whatsapp</a></div>
 <div class="carte-produit"><img src="idefix100g.jpeg"><h3>IDE FIX 100G</h3><p class="prix">Fongicide</p><a href="https://wa.me/221783594831?text=Bonjour%20KOR%20AGROMAX%2C%20je%20veux%20commander%20IDEFIX" class="btn-whatsapp" target="_blank">Commander sur whatsapp</a></div>
@@ -116,7 +121,6 @@
 <p>Lompoul, Sénégal</p>
 </section>
 </main>
-
 <footer align="center"><hr><p>&copy; 2026 KOR AGROMAX - Lompoul</p></footer>
 </body>
 </html>
