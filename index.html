@@ -13,23 +13,23 @@
 .carte-produit img{width:100%;height:180px;object-fit:contain;border-radius:8px;background:#fff;}
 .prix{font-weight:bold;color:#2e7d32;margin:10px 0;}
 .btn-whatsapp{display:inline-block;background:#25D366;color:white;padding:10px 15px;border-radius:6px;text-decoration:none;margin-top:10px;font-weight:bold;}
-.navbar{display:flex !important;flex-wrap:wrap !important;justify-content:space-between !important;align-items:center !important;padding:10px 15px !important;background:#fff !important;position:sticky;top:0;z-index:1000;box-shadow:0 2px 5px rgba(0,0,0,0.1);}
-.menu{display:flex !important;flex-wrap:wrap !important;gap:12px !important;list-style:none !important;padding:0 !important;margin:10px 0 !important;}
-.menu li a{text-decoration:none;color:#2e7d32;font-weight:600;}
-@media(max-width:768px){.navbar{flex-direction:column !important;}.menu{justify-content:center !important;}}
+.navbar{display:flex !important;flex-direction:row !important;flex-wrap:nowrap !important;justify-content:space-between !important;align-items:center !important;padding:8px 10px !important;background:#fff !important;position:sticky;top:0;z-index:1000;box-shadow:0 2px 5px rgba(0,0,0,0.1);}
+.logo{flex-shrink:0;}
+.logo img{width:140px !important;max-width:32vw !important;}
+.menu{display:flex !important;flex-direction:row !important;flex-wrap:wrap !important;gap:10px !important;list-style:none !important;padding:0 !important;margin:0 !important;justify-content:flex-end !important;align-items:center !important;}
+.menu li a{text-decoration:none;color:#2e7d32;font-weight:700;font-size:13px !important;white-space:nowrap;}
+@media(max-width:380px){.logo img{width:100px !important;}.menu li a{font-size:10px !important;}.menu{gap:6px !important;}}
 .sous-titre{margin-top:40px;color:#2e7d32;border-left:6px solid #2e7d32;padding-left:12px;font-size:22px;}
 .sous-titre-phyto{margin-top:60px;color:#e65100;border-left:6px solid #ff9800;padding-left:12px;font-size:22px;}
 .btn-choix{padding:15px 30px;font-size:18px;font-weight:bold;border:none;border-radius:10px;cursor:pointer;margin:10px;transition:0.3s;}
 .btn-semence{background:#2e7d32;color:white;}
-.btn-semence:hover{background:#1b5e20;}
 .btn-phyto{background:#ff9800;color:white;}
-.btn-phyto:hover{background:#e65100;}
 </style>
 </head>
 <body>
 <header>
 <nav class="navbar">
-<div class="logo"><img src="logo.jpeg" width="200" alt="KOR AGROMAX"></div>
+<div class="logo"><img src="logo.jpeg" alt="KOR AGROMAX"></div>
 <ul class="menu">
 <li><a href="#accueil">Accueil</a></li>
 <li><a href="#apropos">À propos</a></li>
@@ -39,39 +39,19 @@
 </ul>
 </nav>
 </header>
-
 <main>
-<section id="accueil">
-<h1 align="center">Bienvenue chez KOR AGROMAX</h1>
-<p align="center"><strong>Vos cultures, notre expertise, votre réussite.</strong></p>
-</section>
+<section id="accueil"><h1 align="center">Bienvenue chez KOR AGROMAX</h1><p align="center"><strong>Vos cultures, notre expertise, votre réussite.</strong></p></section>
+<section id="apropos" style="max-width:900px;margin:auto;padding:30px 20px;"><h2 align="center">À propos</h2><p align="center" style="line-height:1.8;font-size:17px;">KOR AGROMAX est une entreprise spécialisée dans le développement agricole.</p></section>
+<section id="services" style="padding:40px 20px;background:#f9f9f9;"><h2 align="center">Nos services</h2><div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;max-width:1000px;margin:20px auto;"><div style="border:1px solid #e0e0e0;border-radius:12px;padding:20px;background:#fff;text-align:center;"><h3>🌱 Semences de qualité</h3></div><div style="border:1px solid #e0e0e0;border-radius:12px;padding:20px;background:#fff;text-align:center;"><h3>🚜 Accompagnement agricole</h3></div><div style="border:1px solid #e0e0e0;border-radius:12px;padding:20px;background:#fff;text-align:center;"><h3>🌾 Production agricole</h3></div><div style="border:1px solid #e0e0e0;border-radius:12px;padding:20px;background:#fff;text-align:center;"><h3>📦 Vente de produits</h3></div></div></section>
 
-<section id="apropos" style="max-width:900px;margin:auto;padding:30px 20px;">
-<h2 align="center">À propos</h2>
-<p align="center" style="line-height:1.8;font-size:17px;">KOR AGROMAX est une entreprise spécialisée dans le développement agricole. Nous accompagnons les producteurs avec des solutions innovantes, des semences de qualité, des conseils techniques et des services adaptés pour améliorer les rendements.</p>
-</section>
-
-<section id="services" style="padding:40px 20px;background:#f9f9f9;">
-<h2 align="center">Nos services</h2>
-<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;max-width:1000px;margin:20px auto;">
-<div style="border:1px solid #e0e0e0;border-radius:12px;padding:20px;background:#fff;text-align:center;"><h3>🌱 Semences de qualité</h3><p>Semences sélectionnées pour améliorer vos rendements.</p></div>
-<div style="border:1px solid #e0e0e0;border-radius:12px;padding:20px;background:#fff;text-align:center;"><h3>🚜 Accompagnement agricole</h3><p>Conseils techniques pour une agriculture moderne et durable.</p></div>
-<div style="border:1px solid #e0e0e0;border-radius:12px;padding:20px;background:#fff;text-align:center;"><h3>🌾 Production agricole</h3><p>Production et valorisation des produits agricoles de qualité.</p></div>
-<div style="border:1px solid #e0e0e0;border-radius:12px;padding:20px;background:#fff;text-align:center;"><h3>📦 Vente de produits</h3><p>Distribution d'intrants et produits adaptés à vos besoins.</p></div>
-</div>
-</section>
-
-<!-- SECTION PRODUITS AVEC 2 BOUTONS -->
 <section id="produits" style="padding:40px 20px;">
 <h2 align="center">Nos Produits</h2>
 <p align="center">Choisissez une catégorie</p>
-
 <div style="text-align:center; margin:30px 0;">
 <button onclick="voirSemences()" class="btn-choix btn-semence">🌱 VOIR SEMENCES</button>
 <button onclick="voirPhytos()" class="btn-choix btn-phyto">🧪 VOIR PRODUITS PHYTOSANITAIRES</button>
 </div>
 
-<!-- BLOC SEMENCES -->
 <div id="bloc-semences" style="display:block;">
 <h3 class="sous-titre">🌱 Nos Semences Maraîchères - 18 Produits</h3>
 <div class="grille-produits">
@@ -96,56 +76,44 @@
 </div>
 </div>
 
-<!-- BLOC PHYTOS -->
 <div id="bloc-phytos" style="display:none;">
-<h3 class="sous-titre-phyto"> Nos Produits Phytosanitaires - 25 Produits</h3>
+<h3 class="sous-titre-phyto">🧪 Nos Produits Phytosanitaires - 25 Produits</h3>
 <div class="grille-produits">
-<div class="carte-produit"><img src="rocket440ec.jpeg"><h3>ROCKET 440 EC</h3><p class="prix">Insecticide</p><a href="https://wa.me/221783594831?text=Bonjour%20KOR%20AGROMAX%2C%20je%20veux%20commander%20ROCKET%20440" class="btn-whatsapp" target="_blank">Commander sur whatsapp</a></div>
-<div class="carte-produit"><img src="yakaar424ec.jpeg"><h3>YAKAAR 424 EC</h3><p class="prix">Insecticide</p><a href="https://wa.me/221783594831?text=Bonjour%20KOR%20AGROMAX%2C%20je%20veux%20commander%20YAKAAR" class="btn-whatsapp" target="_blank">Commander sur whatsapp</a></div>
-<div class="carte-produit"><img src="jazzfire500wg.jpeg"><h3>JAZZ FIRE 500 WG</h3><p class="prix">Insecticide</p><a href="https://wa.me/221783594831?text=Bonjour%20KOR%20AGROMAX%2C%20je%20veux%20commander%20JAZZ%20FIRE" class="btn-whatsapp" target="_blank">Commander sur whatsapp</a></div>
-<div class="carte-produit"><img src="benji5g.jpeg"><h3>BENJI 5g</h3><p class="prix">Insecticide</p><a href="https://wa.me/221783594831?text=Bonjour%20KOR%20AGROMAX%2C%20je%20veux%20commander%20BENJI" class="btn-whatsapp" target="_blank">Commander sur whatsapp</a></div>
-<div class="carte-produit"><img src="nemachoc150ec.jpeg"><h3>NEMACHOC 150 EC</h3><p class="prix">Insecticide</p><a href="https://wa.me/221783594831?text=Bonjour%20KOR%20AGROMAX%2C%20je%20veux%20commander%20NEMACHOC" class="btn-whatsapp" target="_blank">Commander sur whatsapp</a></div>
-<div class="carte-produit"><img src="panther44ec.jpeg"><h3>PANTHER 44 EC</h3><p class="prix">Insecticide</p><a href="https://wa.me/221783594831?text=Bonjour%20KOR%20AGROMAX%2C%20je%20veux%20commander%20PANTHER" class="btn-whatsapp" target="_blank">Commander sur whatsapp</a></div>
-<div class="carte-produit"><img src="nemafort400sc.jpeg"><h3>NEMAFORT 400 SC</h3><p class="prix">Insecticide</p><a href="https://wa.me/221783594831?text=Bonjour%20KOR%20AGROMAX%2C%20je%20veux%20commander%20NEMAFORT" class="btn-whatsapp" target="_blank">Commander sur whatsapp</a></div>
-<div class="carte-produit"><img src="attackplus.jpeg"><h3>ATTACK PLUS</h3><p class="prix">Insecticide</p><a href="https://wa.me/221783594831?text=Bonjour%20KOR%20AGROMAX%2C%20je%20veux%20commander%20ATTACK" class="btn-whatsapp" target="_blank">Commander sur whatsapp</a></div>
-<div class="carte-produit"><img src="koptimal1l.jpeg"><h3>K-OPTIMAL 1L</h3><p class="prix">Insecticide</p><a href="https://wa.me/221783594831?text=Bonjour%20KOR%20AGROMAX%2C%20je%20veux%20commander%20KOPTIMAL" class="btn-whatsapp" target="_blank">Commander sur whatsapp</a></div>
-<div class="carte-produit"><img src="emacot050wg.jpeg"><h3>EMACOT 050 WG</h3><p class="prix">anti-Chenilles</p><a href="https://wa.me/221783594831?text=Bonjour%20KOR%20AGROMAX%2C%20je%20veux%20commander%20EMACOT" class="btn-whatsapp" target="_blank">Commander sur whatsapp</a></div>
-<div class="carte-produit"><img src="movento.jpeg"><h3>MOVENTO</h3><p class="prix">Insecticide</p><a href="https://wa.me/221783594831?text=Bonjour%20KOR%20AGROMAX%2C%20je%20veux%20commander%20MOVENTO" class="btn-whatsapp" target="_blank">Commander sur whatsapp</a></div>
-<div class="carte-produit"><img src="caimanb19.jpeg"><h3>CAIMAN B19</h3><p class="prix">Insecticide</p><a href="https://wa.me/221783594831?text=Bonjour%20KOR%20AGROMAX%2C%20je%20veux%20commander%20CAIMAN" class="btn-whatsapp" target="_blank">Commander sur whatsapp</a></div>
-<div class="carte-produit"><img src="idefix100g.jpeg"><h3>IDE FIX 100G</h3><p class="prix">Fongicide</p><a href="https://wa.me/221783594831?text=Bonjour%20KOR%20AGROMAX%2C%20je%20veux%20commander%20IDEFIX" class="btn-whatsapp" target="_blank">Commander sur whatsapp</a></div>
-<div class="carte-produit"><img src="athlete80wp.jpeg"><h3>ATHLETE 80 WP</h3><p class="prix">Fongicide</p><a href="https://wa.me/221783594831?text=Bonjour%20KOR%20AGROMAX%2C%20je%20veux%20commander%20ATHLETE" class="btn-whatsapp" target="_blank">Commander sur whatsapp</a></div>
-<div class="carte-produit"><img src="kasumai240sc.jpeg"><h3>Kasumai 240 SC</h3><p class="prix">Fongicide</p><a href="https://wa.me/221783594831?text=Bonjour%20KOR%20AGROMAX%2C%20je%20veux%20commander%20KASUMAI" class="btn-whatsapp" target="_blank">Commander sur whatsapp</a></div>
-<div class="carte-produit"><img src="essem100g.jpeg"><h3>ESSEM 100G</h3><p class="prix">Fongicide</p><a href="https://wa.me/221783594831?text=Bonjour%20KOR%20AGROMAX%2C%20je%20veux%20commander%20ESSEM" class="btn-whatsapp" target="_blank">Commander sur whatsapp</a></div>
-<div class="carte-produit"><img src="select120ec.jpeg"><h3>SELECT 120 EC</h3><p class="prix">Herbicide</p><a href="https://wa.me/221783594831?text=Bonjour%20KOR%20AGROMAX%2C%20je%20veux%20commander%20SELECT" class="btn-whatsapp" target="_blank">Commander sur whatsapp</a></div>
-<div class="carte-produit"><img src="cletor240ec.jpeg"><h3>CLETOR 240 EC</h3><p class="prix">Herbicide</p><a href="https://wa.me/221783594831?text=Bonjour%20KOR%20AGROMAX%2C%20je%20veux%20commander%20CLETOR" class="btn-whatsapp" target="_blank">Commander sur whatsapp</a></div>
-<div class="carte-produit"><img src="saphir500ml.jpeg"><h3>SAPHIR 500ML</h3><p class="prix">Herbicide</p><a href="https://wa.me/221783594831?text=Bonjour%20KOR%20AGROMAX%2C%20je%20veux%20commander%20SAPHIR" class="btn-whatsapp" target="_blank">Commander sur whatsapp</a></div>
-<div class="carte-produit"><img src="digrowbio8.jpeg"><h3>DI GROW BIO-8</h3><p class="prix">Engrais bio</p><a href="https://wa.me/221783594831?text=Bonjour%20KOR%20AGROMAX%2C%20je%20veux%20DIGROW%20commander%20BIO" class="btn-whatsapp" target="_blank">Commander sur whatsapp</a></div>
-<div class="carte-produit"><img src="foligademarrage.jpeg"><h3>FOLIGA.D</h3><p class="prix">Engrais foliaire</p><a href="https://wa.me/221783594831?text=Bonjour%20KOR%20AGROMAX%2C%20je%20veux%20commander%20FOLIGA" class="btn-whatsapp" target="_blank">Commander sur whatsapp</a></div>
-<div class="carte-produit"><img src="digrowvert.jpeg"><h3>D.I GROW</h3><p class="prix">Engrais Croissance</p><a href="https://wa.me/221783594831?text=Bonjour%20KOR%20AGROMAX%2C%20je%20veux%20DIGROW%20commander%20Vert" class="btn-whatsapp" target="_blank">Commander sur whatsapp</a></div>
-<div class="carte-produit"><img src="digrowrouge.jpeg"><h3>D.I GROW</h3><p class="prix">Engrais foliaire</p><a href="https://wa.me/221783594831?text=Bonjour%20KOR%20AGROMAX%2C%20je%20veux%20commander%20DIGROW%20Rouge" class="btn-whatsapp" target="_blank">Commander sur whatsapp</a></div>
-<div class="carte-produit"><img src="mixamin.jpeg"><h3>MIXAMIN</h3><p class="prix">Engrais</p><a href="https://wa.me/221783594831?text=Bonjour%20KOR%20AGROMAX%2C%20je%20veux%20commander%20MIXAMIN" class="btn-whatsapp" target="_blank">Commander sur whatsapp</a></div>
-<div class="carte-produit"><img src="npk202020.jpeg"><h3>NPK 20-20-20</h3><p class="prix">Engrais</p><a href="https://wa.me/221783594831?text=Bonjour%20KOR%20AGROMAX%2C%20je%20veux%20commander%20NPK" class="btn-whatsapp" target="_blank">Commander sur whatsapp</a></div>
+<div class="carte-produit"><img src="rocket440ec.jpeg"><h3>ROCKET 440 EC</h3><p class="prix">Insecticide</p><a href="https://wa.me/221783594831?text=Bonjour%20KOR%20AGROMAX%2C%20je%20veux%20commander%20ROCKET%20440%20EC" class="btn-whatsapp" target="_blank">Commander sur WhatsApp</a></div>
+<div class="carte-produit"><img src="yakaar424ec.jpeg"><h3>YAKAAR 424 EC</h3><p class="prix">Insecticide</p><a href="https://wa.me/221783594831?text=Bonjour%20KOR%20AGROMAX%2C%20je%20veux%20commander%20YAKAAR%20424%20EC" class="btn-whatsapp" target="_blank">Commander sur WhatsApp</a></div>
+<div class="carte-produit"><img src="jazzfire500wg.jpeg"><h3>JAZZ FIRE 500 WG</h3><p class="prix">Insecticide</p><a href="https://wa.me/221783594831?text=Bonjour%20KOR%20AGROMAX%2C%20je%20veux%20commander%20JAZZ%20FIRE%20500%20WG" class="btn-whatsapp" target="_blank">Commander sur WhatsApp</a></div>
+<div class="carte-produit"><img src="benji5g.jpeg"><h3>BENJI 5g</h3><p class="prix">Insecticide</p><a href="https://wa.me/221783594831?text=Bonjour%20KOR%20AGROMAX%2C%20je%20veux%20commander%20BENJI%205g" class="btn-whatsapp" target="_blank">Commander sur WhatsApp</a></div>
+<div class="carte-produit"><img src="nemachoc150ec.jpeg"><h3>NEMACHOC 150 EC</h3><p class="prix">Insecticide</p><a href="https://wa.me/221783594831?text=Bonjour%20KOR%20AGROMAX%2C%20je%20veux%20commander%20NEMACHOC%20150%20EC" class="btn-whatsapp" target="_blank">Commander sur WhatsApp</a></div>
+<div class="carte-produit"><img src="panther44ec.jpeg"><h3>PANTHER 44 EC</h3><p class="prix">Insecticide</p><a href="https://wa.me/221783594831?text=Bonjour%20KOR%20AGROMAX%2C%20je%20veux%20commander%20PANTHER%2044%20EC" class="btn-whatsapp" target="_blank">Commander sur WhatsApp</a></div>
+<div class="carte-produit"><img src="nemafort400sc.jpeg"><h3>NEMAFORT 400 SC</h3><p class="prix">Insecticide</p><a href="https://wa.me/221783594831?text=Bonjour%20KOR%20AGROMAX%2C%20je%20veux%20commander%20NEMAFORT%20400%20SC" class="btn-whatsapp" target="_blank">Commander sur WhatsApp</a></div>
+<div class="carte-produit"><img src="attackplus.jpeg"><h3>ATTACK PLUS</h3><p class="prix">Insecticide</p><a href="https://wa.me/221783594831?text=Bonjour%20KOR%20AGROMAX%2C%20je%20veux%20commander%20ATTACK%20PLUS" class="btn-whatsapp" target="_blank">Commander sur WhatsApp</a></div>
+<div class="carte-produit"><img src="koptimal1l.jpeg"><h3>K-OPTIMAL 1L</h3><p class="prix">Insecticide</p><a href="https://wa.me/221783594831?text=Bonjour%20KOR%20AGROMAX%2C%20je%20veux%20commander%20K-OPTIMAL%201L" class="btn-whatsapp" target="_blank">Commander sur WhatsApp</a></div>
+<div class="carte-produit"><img src="emacot050wg.jpeg"><h3>EMACOT 050 WG</h3><p class="prix">anti-Chenilles</p><a href="https://wa.me/221783594831?text=Bonjour%20KOR%20AGROMAX%2C%20je%20veux%20commander%20EMACOT%20050%20WG" class="btn-whatsapp" target="_blank">Commander sur WhatsApp</a></div>
+<div class="carte-produit"><img src="movento.jpeg"><h3>MOVENTO</h3><p class="prix">Insecticide</p><a href="https://wa.me/221783594831?text=Bonjour%20KOR%20AGROMAX%2C%20je%20veux%20commander%20MOVENTO" class="btn-whatsapp" target="_blank">Commander sur WhatsApp</a></div>
+<div class="carte-produit"><img src="caimanb19.jpeg"><h3>CAIMAN B19</h3><p class="prix">Insecticide</p><a href="https://wa.me/221783594831?text=Bonjour%20KOR%20AGROMAX%2C%20je%20veux%20commander%20CAIMAN%20B19" class="btn-whatsapp" target="_blank">Commander sur WhatsApp</a></div>
+<div class="carte-produit"><img src="idefix100g.jpeg"><h3>IDE FIX 100G</h3><p class="prix">Fongicide</p><a href="https://wa.me/221783594831?text=Bonjour%20KOR%20AGROMAX%2C%20je%20veux%20commander%20IDE%20FIX%20100G" class="btn-whatsapp" target="_blank">Commander sur WhatsApp</a></div>
+<div class="carte-produit"><img src="athlete80wp.jpeg"><h3>ATHLETE 80 WP</h3><p class="prix">Fongicide</p><a href="https://wa.me/221783594831?text=Bonjour%20KOR%20AGROMAX%2C%20je%20veux%20commander%20ATHLETE%2080%20WP" class="btn-whatsapp" target="_blank">Commander sur WhatsApp</a></div>
+<div class="carte-produit"><img src="kasumai240sc.jpeg"><h3>Kasumai 240 SC</h3><p class="prix">Fongicide</p><a href="https://wa.me/221783594831?text=Bonjour%20KOR%20AGROMAX%2C%20je%20veux%20commander%20Kasumai%20240%20SC" class="btn-whatsapp" target="_blank">Commander sur WhatsApp</a></div>
+<div class="carte-produit"><img src="essem100g.jpeg"><h3>ESSEM 100G</h3><p class="prix">Fongicide</p><a href="https://wa.me/221783594831?text=Bonjour%20KOR%20AGROMAX%2C%20je%20veux%20commander%20ESSEM%20100G" class="btn-whatsapp" target="_blank">Commander sur WhatsApp</a></div>
+<div class="carte-produit"><img src="select120ec.jpeg"><h3>SELECT 120 EC</h3><p class="prix">Herbicide</p><a href="https://wa.me/221783594831?text=Bonjour%20KOR%20AGROMAX%2C%20je%20veux%20commander%20SELECT%20120%20EC" class="btn-whatsapp" target="_blank">Commander sur WhatsApp</a></div>
+<div class="carte-produit"><img src="cletor240ec.jpeg"><h3>CLETOR 240 EC</h3><p class="prix">Herbicide</p><a href="https://wa.me/221783594831?text=Bonjour%20KOR%20AGROMAX%2C%20je%20veux%20commander%20CLETOR%20240%20EC" class="btn-whatsapp" target="_blank">Commander sur WhatsApp</a></div>
+<div class="carte-produit"><img src="saphir500ml.jpeg"><h3>SAPHIR 500ML</h3><p class="prix">Herbicide</p><a href="https://wa.me/221783594831?text=Bonjour%20KOR%20AGROMAX%2C%20je%20veux%20commander%20SAPHIR%20500ML" class="btn-whatsapp" target="_blank">Commander sur WhatsApp</a></div>
+<div class="carte-produit"><img src="digrowbio8.jpeg"><h3>DI GROW BIO-8</h3><p class="prix">Engrais bio</p><a href="https://wa.me/221783594831?text=Bonjour%20KOR%20AGROMAX%2C%20je%20veux%20commander%20DI%20GROW%20BIO-8" class="btn-whatsapp" target="_blank">Commander sur WhatsApp</a></div>
+<div class="carte-produit"><img src="foligademarrage.jpeg"><h3>FOLIGA.D</h3><p class="prix">Engrais foliaire</p><a href="https://wa.me/221783594831?text=Bonjour%20KOR%20AGROMAX%2C%20je%20veux%20commander%20FOLIGA.D" class="btn-whatsapp" target="_blank">Commander sur WhatsApp</a></div>
+<div class="carte-produit"><img src="digrowvert.jpeg"><h3>D.I GROW Vert</h3><p class="prix">Engrais Croissance</p><a href="https://wa.me/221783594831?text=Bonjour%20KOR%20AGROMAX%2C%20je%20veux%20commander%20D.I%20GROW%20Vert" class="btn-whatsapp" target="_blank">Commander sur WhatsApp</a></div>
+<div class="carte-produit"><img src="digrowrouge.jpeg"><h3>D.I GROW Rouge</h3><p class="prix">Engrais foliaire</p><a href="https://wa.me/221783594831?text=Bonjour%20KOR%20AGROMAX%2C%20je%20veux%20commander%20D.I%20GROW%20Rouge" class="btn-whatsapp" target="_blank">Commander sur WhatsApp</a></div>
+<div class="carte-produit"><img src="mixamin.jpeg"><h3>MIXAMIN</h3><p class="prix">Engrais</p><a href="https://wa.me/221783594831?text=Bonjour%20KOR%20AGROMAX%2C%20je%20veux%20commander%20MIXAMIN" class="btn-whatsapp" target="_blank">Commander sur WhatsApp</a></div>
+<div class="carte-produit"><img src="npk202020.jpeg"><h3>NPK 20-20-20</h3><p class="prix">Engrais</p><a href="https://wa.me/221783594831?text=Bonjour%20KOR%20AGROMAX%2C%20je%20veux%20commander%20NPK%2020-20-20" class="btn-whatsapp" target="_blank">Commander sur WhatsApp</a></div>
 </div>
 </div>
 </section>
 
-<section id="contact" style="padding:40px 20px;text-align:center;background:#2e7d32;color:white;">
-<h2>Contact</h2>
-<p>WhatsApp: +221 78 359 48 31</p>
-<p>Lompoul, Sénégal</p>
-</section>
+<section id="contact" style="padding:40px 20px;text-align:center;background:#2e7d32;color:white;"><h2>Contact</h2><p>WhatsApp: +221 78 359 48 31</p><p>Lompoul, Sénégal</p></section>
 </main>
-<footer align="center"><hr><p>&copy; 2026 KOR AGROMAX - Lompoul</p></footer>
-
+<footer align="center"><p>&copy; 2026 KOR AGROMAX</p></footer>
 <script>
-function voirSemences(){
-document.getElementById('bloc-semences').style.display='block';
-document.getElementById('bloc-phytos').style.display='none';
-}
-function voirPhytos(){
-document.getElementById('bloc-phytos').style.display='block';
-document.getElementById('bloc-semences').style.display='none';
-}
+function voirSemences(){document.getElementById('bloc-semences').style.display='block';document.getElementById('bloc-phytos').style.display='none';}
+function voirPhytos(){document.getElementById('bloc-phytos').style.display='block';document.getElementById('bloc-semences').style.display='none';}
 </script>
 </body>
 </html>
